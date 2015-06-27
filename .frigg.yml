@@ -1,0 +1,8 @@
+tasks:
+  - jekyll build
+  - ./test
+
+preview:
+ image: frigg/frigg-test-base
+ tasks:
+  - jekyll serve -B -H 0.0.0.0 -P 8000

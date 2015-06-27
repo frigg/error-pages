@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Checks that there is no uncommited or untracked files.
+# Used to make sure that all jekyll generated files are
+# commited.
+[[ $(git status --porcelain) == "" ]]
